@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 2</title>
+    
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script>  -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>  -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>  -->
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+    <link rel="stylesheet" href="./static/css/style.css" />
+    
+ 
+
+    
+   
+    
+
+
+</head>
+<body>
+        
+          
+    
+        <a class="btn btn-primary" href="/map" role="button" id="two">Heat Map</a>
+        
+   
+    <div id="scatter"></div>
+    
+    <select id="selDataset" onchange="getData(this.value)">
+        <option value="total_years">United States</option>
+        <option value="ca_years">California</option>
+        <option value="ga_years">Georgia</option>
+        <option value="tx_years">Texas</option>
+        <option value="nc_years">North Carolina</option>
+        <option value="fl_years">Florida</option>
+        <option value="sc_years">South Carolina</option>
+        <option value="ny_years">New York</option>
+        <option value="ms_years">Mississippi</option>
+        <option value="az_years">Arizona</option>
+        <option value="al_years">Alabama</option>
+
+    
+      
+        
+    </select>
+    <div id="bar"></div>
+    <select id="selDataset2" onchange="getData2(this.value)">
+        <option value="acreage">All Years</option>
+        <option value="acreage_2011">2011</option>
+        <option value="acreage_2012">2012</option>
+        <option value="acreage_2013">2013</option>
+        <option value="acreage_2014">2014</option>
+        <option value="acreage_2015">2015</option>
+      
+        
+    </select>
+
+    <div id="pie"></div>
+    
+
+  
+    
+
+
+ 
+    
+  
+  
+
+   
+
+    <script type="text/javascript" src="static/js/app.js"></script>
+    <script type="text/javascript" src="static/js/app2.js"></script>
+    <script type="text/javascript" src="static/js/app3.js"></script>
+   
+    
+    
+ 
+  
+    
+    
+    
+   
+
+</body>
+</html>
