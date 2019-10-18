@@ -13,17 +13,17 @@ Factors analyzed includes: wildfire geographic location, acreage burned, causes 
 
 # Pie Chart
 
-![newplot(1)][images/newplot(1).png]
+![newplot_pie](images/newplot_pie).png)
 - Clearly shows that the top causes of wildfires is due to human action. - Debris and
 
 # Line Chart 
 
-![newplot(2)][(images/newplot(2).png)]
+![newplot_line][(images/newplot_line.png)
 - Indicates an increasingly upwards trend in the total number of fires across all States in the USA.
 
 # Bar Chart 
 
-![newplot(3)](images/newplot(3).png)
+![newplot_bar](images/newplot_bar.png)
 - Highlights the top States with the largest acres burned - California, Georgia, Texas, North Carolina,Florida.
 
 # Heat Map 
