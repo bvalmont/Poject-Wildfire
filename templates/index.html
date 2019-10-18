@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project 2</title>
+    <title>Wildfires Homepage</title>
     
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <!-- <script src="https://d3js.org/d3.v4.min.js"></script>  -->
@@ -14,7 +14,8 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>  -->
     <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
     <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
-    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     
  
 
@@ -25,14 +26,88 @@
 
 </head>
 <body>
-        
+        <nav class = "navigation">
+        <ul class="nav justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="/">Wildfires Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/map">Heat Map</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="https://github.com/bvalmont/Poject-Wildfire.git">Github</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/total_years">Sample Data</a>
+                </li>
+           
+            </ul>
+        </nav>
+
+        <div class="container">
+
+          <!-- Jumbotron -->
+          <div class="jumbotron text-center">
+              <strong><h1 class="display-4" style="color: white">United States Wildfires</h1></strong>
+              
+          </div>
+        </div>
+  
           
-    
-        <a class="btn btn-primary" href="/map" role="button" id="two">Heat Map</a>
+        <div class="container">
+            <div class="row" id="summary">
+                <div class="col-md-10">
+                    <!-- Left Content Box -->
+                    <div class="box" style="padding-bottom: 20px;">
+                        <h3 class="title">U.S. Wildfire Data - Fire Program Analysis Fire-Occurrence Database  </h3>
+                        <hr>
+                        <img src="https://www.bing.com/th?id=OIP.9BHXFljyBI_NYbHwKFnC7QHaDs&w=254&h=149&c=7&o=5&pid=1.7" class="vizualization rounded float-left" alt="wildfire image" id="wildfire">
+                        <p>The purpose of this project is to analyze U.S. Wildfire historical data for the United States. 
+                        To accomplish this analysis, we pulled data from the kaggle dataset containing 1.88 million US wildfires, 24 years of geo-referenced wildfire records.</p> 
+                        <p> The data publication contains a spatial database of wildfires that occurred in the US from 1992 to 2015. The wildfire records were acquired from the reporting systems of federal, state, and local fire organizations. The following core data elements were required for records to be included in this data publication: discovery date, final fire size, and a point location  </p>
+                        <p>After assembling the dataset, tools used for analysis included Javascript, Plotly, D3, Leaflet, and Flask among others.
+                        Factors analyzed includes: wildfire geographic location, acreage burned, causes of wildfire, and number of wildfires.  This page provides the source data and
+                        visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                    </div>
+                </div>
+                </div>
+              </div>
+                
         
-   
-    <div id="scatter"></div>
+        
+        
+        
+        
+        
+        
+        <div class = "container">
+        <div class="row" id="piechart">
+            <div class="col-md-8">
+  
+        <div id="pie"></div>
     
+      </div>
+      
+      <div class="col-md-4">
+
+          <span class="border border-warning" id="photo">
+              <img src="https://www.bing.com/th?id=OIF.EcC1US4o0GrIVQ1Zk0ROJw&w=300&h=171&c=7&o=5&dpr=1.5&pid=1.7" alt="Fighting Fire" class="rounded">
+          </span>
+        
+      </div>
+      
+      </div>
+    </div>
+    
+    
+    
+    
+    <div class ="container">
+    <div class ="row" id="linechart">
+        <div class="col-md-8">
+    <div id="scatter"></div>
+   
+        
     <select id="selDataset" onchange="getData(this.value)">
         <option value="total_years">United States</option>
         <option value="ca_years">California</option>
@@ -45,11 +120,35 @@
         <option value="ms_years">Mississippi</option>
         <option value="az_years">Arizona</option>
         <option value="al_years">Alabama</option>
-
-    
-      
-        
     </select>
+    </div>
+   
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.bing.com/th?id=OIP.ktcWvn3GxbnfC6iI2XaVQAHaE5&w=292&h=193&c=7&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="Fire Helicopter">
+            <div class="card-body">
+              <h5 class="card-title">Top 5 States for Total Wildfires</h5>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">California</li>
+              <li class="list-group-item">Georgia</li>
+              <li class="list-group-item">Texas</li>
+              <li class="list-group-item">North Carolina</li>
+              <li class="list-group-item">Florida</li>
+            </ul>
+        </div>
+  
+    </div>
+  
+  
+  </div>
+  </div>
+      
+  
+<div class ="container">
+<div class ="row" id="barchart">
+    <div class="col-md-8">
     <div id="bar"></div>
     <select id="selDataset2" onchange="getData2(this.value)">
         <option value="acreage">All Years</option>
@@ -58,22 +157,37 @@
         <option value="acreage_2013">2013</option>
         <option value="acreage_2014">2014</option>
         <option value="acreage_2015">2015</option>
-      
-        
     </select>
+   </div>
 
-    <div id="pie"></div>
+   <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+          <img src="https://www.bing.com/th?id=OIP.y_VE15Ui5qBjKxcAdh-tywHaE8&w=292&h=186&c=7&o=5&dpr=1.5&pid=1.7" class="card-img-top" alt="LA Wildfires">
+          <div class="card-body">
+            <h5 class="card-title">Acres Burned</h5>
+            <p class="card-text">Over 140M acres total of US land area have burned according to the dataset used in this project.  For more inforation about wildfires, visit Ready.gov. </p>
+            <a href="https://www.ready.gov" class="btn btn-primary">Ready.gov</a>
+          </div>
+        </div>
+      
+   </div>   
+</div>
+</div>
+
+
+
+   
+ 
     
 
-  
-    
-
-
+<span class="d-block p-2 bg-light text-white" id="dblock2"></span>
  
     
   
   
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    
 
     <script type="text/javascript" src="static/js/app.js"></script>

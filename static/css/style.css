@@ -12,3 +12,40 @@ html
 
 
 
+
+
+.navigation{ 
+  background-color: red;
+  
+}
+
+.nav-link{
+  color: black;
+}
+
+body {
+background-color: white;
+background-image: url("https://gdb.rferl.org/37C3DE1A-16C5-4EAB-B625-03F37DD4CC0F_w1597_n_r1_st.jpg");
+}
+
+.rounded{ margin-top: 60px;
+}
+
+.jumbotron{margin-top: 20px;
+
+background-color: black;}
+
+#cardtitle{margin-top: 25px;}
+
+#linechart{margin-top: 40px;}
+
+#barchart{margin-top: 45px;}
+
+#cardshark{margin-top: 15px;}
+
+#summary{background-color: white;}
+
+#wildfire{margin-right: 10px;}
+
+#piechart{margin-top: 35px;}
+
