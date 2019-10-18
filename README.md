@@ -13,12 +13,12 @@ Factors analyzed includes: wildfire geographic location, acreage burned, causes 
 
 # Pie Chart
 
-![newplot_pie](images/newplot_pie).png)
+![newplot_pie](images/newplot_pie.png)
 - Clearly shows that the top causes of wildfires is due to human action. - Debris and
 
 # Line Chart 
 
-![newplot_line][(images/newplot_line.png)
+![newplot_line](images/newplot_line.png)
 - Indicates an increasingly upwards trend in the total number of fires across all States in the USA.
 
 # Bar Chart 
