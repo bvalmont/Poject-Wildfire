@@ -16,7 +16,7 @@ d3.json(defaultURL3).then(function(pie) {
 
   let data = [trace3];
   let layout = {autoscaleYAxis: true,
-  title: "Top 10 Causes of Wildfires (1992-2015)",
+  title: "Top 10 Causes of Wildfires(1992-2015) in the United States",
  };
 
 

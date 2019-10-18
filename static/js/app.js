@@ -25,7 +25,7 @@ d3.json(defaultURL).then(function(line) {
 
   let data = [trace];
   let layout = {autoscaleYAxis: true,
-  title: "United States Wildfires (1996-2015)",
+  title: "Count of United States Wildfires (1996-2015)",
 xaxis: {
   title: 'Wildfire Years'
 },
