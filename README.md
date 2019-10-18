@@ -26,7 +26,7 @@ Factors analyzed includes: wildfire geographic location, acreage burned, causes 
 ![newplot_bar](images/newplot_bar.png)
 - Highlights the top States with the largest acres burned - California, Georgia, Texas, North Carolina,Florida.
 
-# Heat Map 
+# HeatMap 
 
 ![wildfire_heatmap](images/wildfire_heatmap.png)
 - Most of the fires are concentrated in the urban areas lending further credence to the fact that Humans are the largest causes of wildfires.
