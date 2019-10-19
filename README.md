@@ -1,4 +1,4 @@
-# Poject-Wildfire
+# **Analysis of Wild Fires in the United States (Full Stack-Project)**
 # Background
 The purpose of this project is to analyze U.S. Wildfire historical data for the United States.
 To accomplish this analysis, we pulled data from the kaggle dataset containing 1.88 million US wildfires, 24 years of geo-referenced wildfire records.
