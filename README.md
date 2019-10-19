@@ -1,3 +1,4 @@
+![Alt Text](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgvTvbL44_iA2eJPy30599Hc1duyJhttBEU0qAWjILr4c1a3tK)
 # **Analysis of Wild Fires in the United States (Full Stack-Project)**
 # Background:
 The purpose of this project is to analyze historical records of wildfires in the United States.
