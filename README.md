@@ -31,13 +31,26 @@ After the data cleaning process was completed using Python and Pandas, a .csv wa
 
 
 # Analysis 
-# Pie Chart
-![newplot_pie](C:\Users\valmo\Desktop\ProjectFires2/pie_chart.png)
-- Clearly shows that the top causes of wildfires is due to human action. - Debris and
-# Line Chart
-- Indicates an increasingly upwards trend in the total number of fires across all States in the USA.
-# Bar Chart
-- Highlights the top States with the largest acres burned - California, Georgia, Texas, North Carolina,Florida.
-# Heat Map
-- Most of the fires are concentrated in the urban areas lending further credence to the fact that Humans are the largest causes of wildfires.
-# The trend analysis shows that areas that were not previously subjected to wildfires in the early 90's now have a high propensity to fires as the human population expands into these areas.
+# ![Alt Text](https://www.bing.com/th?id=OIP.gOyn3l39bzwcepBMx2NYYQHaF7&w=265&h=206&c=7&o=5&pid=1.7)
+## Pie Chart
+The pie chart created with Plotly.js visualized the top 10 causes of wildfire and their respective percentages for the dataset. 
+## Interactive Line Chart
+The interactive line chart created with Plotly.js visualized a twenty year trend for total wildfires in the United States and a twenty year trend for wildfires in the top ten states for most number of wildfires.
+## Interactive Bar Chart
+The interactive bar chart created with Plotly.js displayed the total acres of land burned for the top ten states in the dataset and also displayed the top ten states for wildfire acreage burned during the last 5 years in the dataset.
+## Heat Map
+The heatmap created wit Leaflet.js displayed a heatmap which geolocated over 1.8 million areas of the United States where a wildfire was reported and also used terminator.js plugin to visualize which part of the map is in day or night.
+## HTML5 
+Bootstrap and CSS was used in conjunction with the plots to make an attractive visualizaton of the data, purpose of the project, and to display facts about the dataset.
+
+# Post Analysis & Conclusion
+# ![Alt Text](https://www.bing.com/th?id=OIP.3Y9U4Q0qs-ileWqR9F_GsAHaEc&w=300&h=179&c=7&o=5&pid=1.7)
+There were no particular trends discovered in the line chart or bar chart based on the dataset used in this project. It seems that there are several factors that determines the number of wildfires and acreage burned due to wildfires that goes beyond the scope of this project. One could form a solid theory that when wildfires do occur humans are the culprit the vast majorty of the time based on the statistics captured in the pie chart and by observing the heat map which shows most of the fires occuring in near populated areas of the United States.  The only top 10 cause of fire that was of natural occurance is lightning according to this dataset which came in at 15% of causes of wildfire.
+
+#Link to Project
+# ![Alt Text](https://www.bing.com/th?id=OIP.b7j37FCv7hO196UEw_gSkwHaFj&w=273&h=205&c=7&o=5&pid=1.7)
+**https://smokejumpers.herokuapp.com**
+
+
+
+
